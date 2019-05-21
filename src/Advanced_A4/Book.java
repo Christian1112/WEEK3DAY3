@@ -17,7 +17,6 @@ public class Book {
     private String rentEnd;
     private Status rentStatus;
 
-
     public Book(String bookTitle, String bookIsbn, double bookPrice, String rentStart, String rentEnd, Status rentStatus) {
         count++;
         this.bookID = "b" + count;
