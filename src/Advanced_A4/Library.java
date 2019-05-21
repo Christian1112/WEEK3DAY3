@@ -10,18 +10,24 @@ public class Library {
         this.address = address;
     }
 
-    public String getName(String name){
+    public String getName(){
+
         return this.name;
     }
 
-    public void setName(){
+    public void setName(String name){
+
         this.name = name;
     }
 
-    public String getAddress(String address){
+    public String getAddress(){
+
         return this.address;
     }
-    public void setAddress(){
+    public void setAddress(String address){
+
         this.address = address;
     }
 }
+
+

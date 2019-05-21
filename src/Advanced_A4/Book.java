@@ -87,4 +87,10 @@ public class Book {
     public void setRentStatus(Status rentStatus) {
         this.rentStatus = rentStatus;
     }
+
+    public void rentBook() {
+        if(rentStatus.equals(Status.NotAvailable)) {
+            System.out.println("Book Not Available");
+        }
+    }
 }
