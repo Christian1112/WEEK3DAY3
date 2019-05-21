@@ -11,24 +11,20 @@ public class Intermediate_A3 {
 
         HashMap<String, ArrayList<String>> dictionary = new HashMap<>();
 
-        ArrayList<String> items = new ArrayList<>();
+        ArrayList<String> apple = new ArrayList<>();
+        apple.add("The round fruit of a tree");
+        apple.add("Healthy");
 
-        items.add("The round fruit of a tree");
-        items.add("Healthy");
-        items.add("Long brown ting");
-        items.add("Falls down from a tree");
+        ArrayList<String> stick = new ArrayList<>();
+        stick.add("Long brown ting");
+        stick.add("Falls down from a tree");
 
-
-
-        dictionary.put("apple", items);
-        dictionary.put("stick", items);
+        dictionary.put("apple", apple);
+        dictionary.put("stick", stick);
 
         for(Map.Entry<String, ArrayList<String>> word : dictionary.entrySet()) {
-            System.out.println("Word: " + word.getKey() + " Definiton: " + word.getValue().get(0)+ " Meaning: " + word.getValue().get(1));
-        }
-
-        for(int i = 0; i < dictionary.size(); i++) {
-            System.out.println("Word: " + dictionary.getKey(i) + " Definiton: " + dictionary.getValue(i).get(0)+ " Meaning: " + word.getValue().get(1)););
+            System.out.println("Word: " + word.getKey() + "\nDefiniton: " + word.getValue().get(0)+ "\nMeaning: " + word.getValue().get(1));
+            System.out.println("=======================");
         }
     }
 }
