@@ -16,8 +16,8 @@ public class Intermediate_A3 {
         apple.add("Healthy");
 
         ArrayList<String> stick = new ArrayList<>();
-        stick.add("Long brown ting");
-        stick.add("Falls down from a tree");
+        stick.add("Long brown thing");
+        stick.add("Grows on a tree");
 
         dictionary.put("apple", apple);
         dictionary.put("stick", stick);
