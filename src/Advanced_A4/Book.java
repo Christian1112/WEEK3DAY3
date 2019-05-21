@@ -1,5 +1,8 @@
 package Advanced_A4;
 
+import java.lang.reflect.GenericArrayType;
+import java.util.GregorianCalendar;
+
 public class Book {
 
     // Enum method
@@ -13,18 +16,18 @@ public class Book {
     private String bookTitle;
     private String bookIsbn;
     private double bookPrice;
-    private String rentStart;
-    private String rentEnd;
+    private GregorianCalendar rentStart;
+    private GregorianCalendar rentEnd;
     private Status rentStatus;
 
-    public Book(String bookTitle, String bookIsbn, double bookPrice, String rentStart, String rentEnd, Status rentStatus) {
+    public Book(String bookTitle, String bookIsbn, double bookPrice, Status rentStatus) {
         count++;
         this.bookID = "b" + count;
         this.bookTitle = bookTitle;
         this.bookIsbn = bookIsbn;
         this.bookPrice = bookPrice;
-        this.rentStart = rentStart;
-        this.rentEnd = rentEnd;
+        rentStart = null;
+        rentEnd = null;
         this.rentStatus = rentStatus;
 
     }
@@ -45,11 +48,11 @@ public class Book {
         return this.bookPrice;
     }
 
-    public String getRentStart() {
+    public GregorianCalendar getRentStart() {
         return rentStart;
     }
 
-    public String getRentEnd() {
+    public GregorianCalendar getRentEnd() {
         return this.rentEnd;
     }
 
@@ -73,11 +76,11 @@ public class Book {
         this.bookPrice = bookPrice;
     }
 
-    public void setRentStart(String rentStart) {
+    public void setRentStart(GregorianCalendar rentStart) {
         this.rentStart = rentStart;
     }
 
-    public void setRentEnd(String rentEnd) {
+    public void setRentEnd(GregorianCalendar rentEnd) {
         this.rentEnd = rentEnd;
     }
 
