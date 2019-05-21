@@ -45,9 +45,13 @@ public class Main {
             System.out.println(entry.getKey() + " = " + entry.getValue());
         }
 
-        nameOfDogs.remove("Austria");
-        System.out.println(nameOfDogs);
+        //nameOfDogs.remove("Austria");
+       // System.out.println(nameOfDogs);
 
+        System.out.println(nameOfDogs);
+        nameOfDogs.put("Austria", "Bulldogge");
+        nameOfDogs.replace("America", "Schmausi");
+        System.out.println(nameOfDogs);
 
 
 
