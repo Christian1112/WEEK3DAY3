@@ -7,7 +7,9 @@ public class Book {
         Available, NotAvailable;
     }
 
-    private int bookID;
+    private static int count = 0;
+
+    private String bookID;
     private String bookTitle;
     private String bookIsbn;
     private double bookPrice;
@@ -16,9 +18,9 @@ public class Book {
     private Status rentStatus;
 
 
-    public Book(int bookID, String bookTitle, String bookIsbn, double bookPrice, String rentStart, String rentEnd, Status rentStatus) {
-
-        this.bookID = bookID;
+    public Book(String bookTitle, String bookIsbn, double bookPrice, String rentStart, String rentEnd, Status rentStatus) {
+        count++;
+        this.bookID = "b" + count;
         this.bookTitle = bookTitle;
         this.bookIsbn = bookIsbn;
         this.bookPrice = bookPrice;
@@ -28,20 +30,20 @@ public class Book {
 
     }
 
-    public int getBookID() {
-        return bookID;
+    public String getBookID() {
+        return this.bookID;
     }
 
     public String getBookTitle() {
-        return bookTitle;
+        return this.bookTitle;
     }
 
     public String getBookIsbn() {
-        return bookIsbn;
+        return this.bookIsbn;
     }
 
     public double getBookPrice() {
-        return bookPrice;
+        return this.bookPrice;
     }
 
     public String getRentStart() {
@@ -49,14 +51,14 @@ public class Book {
     }
 
     public String getRentEnd() {
-        return rentEnd;
+        return this.rentEnd;
     }
 
     public Status getRentStatus() {
-        return rentStatus;
+        return this.rentStatus;
     }
 
-    public void setBookID(int bookID) {
+    public void setBookID(String bookID) {
         this.bookID = bookID;
     }
 

@@ -2,23 +2,26 @@ package Advanced_A4;
 
 public class LibraryUser {
 
-    private int userId;
+    private String userId;
     private String name;
     private String address;
     private int booksRented;
 
-    public LibraryUser(int userId, String name, String address, int booksRented){
-        this.userId = userId;
+    private static int count = 0;
+
+    public LibraryUser(String name, String address, int booksRented){
+        count++;
+        this.userId = "u" + count;
         this.name = name;
         this.address = address;
         this.booksRented = booksRented;
     }
 
-    public int getUserId() {
+    public String getUserId() {
         return this.userId;
     }
 
-    public void setUserId(int userId) {
+    public void setUserId(String userId) {
         this.userId = userId;
     }
 
