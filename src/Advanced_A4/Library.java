@@ -3,27 +3,27 @@ package Advanced_A4;
 public class Library {
 
     private String name;
-    private String adress;
+    private String address;
 
-    public Library (String name, String adress){
+    public Library (String name, String address){
 
         this.name = name;
-        this.adress = adress;
+        this.address = address;
 
     }
 
     public String getName(String name){
-        return name;
+        return this.name;
     }
 
     public void setName(){
         this.name = name;
     }
 
-    public String getAdress(String adress){
-        return adress;
+    public String getAddress(String address){
+        return this.address;
     }
-    public void setAdress(){
-        this.adress = adress;
+    public void setAddress(){
+        this.address = address;
     }
 }
