@@ -12,5 +12,18 @@ public class Library {
 
     }
 
-    
+    public String getName(String name){
+        return name;
+    }
+
+    public void setName(){
+        this.name = name;
+    }
+
+    public String getAdress(String adress){
+        return adress;
+    }
+    public void setAdress(){
+        this.adress = adress;
+    }
 }
